@@ -9,5 +9,10 @@ RestoPinは、特定地点の周辺の飲食店情報を知ることができる
 ## Setup
 
 ## Composition
+- TypeScript
+- Vue.js
+- Nuxt
+- Yarn
+- Jest
 
 ## Links
