@@ -1,27 +1,26 @@
 <script setup lang="ts">
-  onMounted(() => {
-    initMap();
-  });
+onMounted(() => {
+  initMap()
+})
 
-  function initMap(): void {
-    const centerPosition = { lat: 35.6821873, lng: 139.7490498 };
-    const markerPosition = { lat: 35.689278, lng: 139.7600751 }
+function initMap (): void {
+  const centerPosition = { lat: 35.6821873, lng: 139.7490498 }
+  const markerPosition = { lat: 35.689278, lng: 139.7600751 }
 
-    const map = new google.maps.Map(document.getElementById("map") as HTMLElement, {
-      zoom: 14,
-      center: centerPosition,
-    });
-    new google.maps.Marker({
-      position: markerPosition,
-      map: map
-    });
-  }
+  const map = new google.maps.Map(document.getElementById('map') as HTMLElement, {
+    zoom: 14,
+    center: centerPosition
+  })
+  const marker = new google.maps.Marker({
+    position: markerPosition
+  })
+  marker.setMap(map)
+}
 </script>
 
 <template>
   <nav class="navbar" role="navigation">
-    <div class="navbar-brand">
-    </div>
+    <div class="navbar-brand" />
     <div class="navbar-menu">
       <div class="navbar-start">
         <div class="navbar-item">
@@ -55,7 +54,7 @@
       </div>
     </div>
     <div class="column">
-      <div id="map" class="embed-map"></div>
+      <div id="map" class="embed-map" />
     </div>
   </div>
 </template>
