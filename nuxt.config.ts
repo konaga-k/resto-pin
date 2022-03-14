@@ -16,7 +16,8 @@ export default defineNuxtConfig({
     ]
   },
   privateRuntimeConfig: {
-    geocodingApiKey: process.env.GEOCODING_API_KEY || '',
-    placesApiKey: process.env.PLACES_API_KEY || ''
+    MAPS_EMBED_API: '',
+    GEOCODING_API_KEY: '',
+    PLACES_API_KEY: ''
   }
 })

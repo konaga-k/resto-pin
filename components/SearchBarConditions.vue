@@ -1,0 +1,10 @@
+<template>
+  <div>
+    <h2>検索条件</h2>
+    <ul>
+      <li>これは</li>
+      <li>仮の</li>
+      <li>項目</li>
+    </ul>
+  </div>
+</template>
