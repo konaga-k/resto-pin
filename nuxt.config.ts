@@ -11,8 +11,7 @@ export default defineNuxtConfig({
   meta: {
     script: [
       {
-        src: `https://maps.googleapis.com/maps/api/js?key=${process.env.MAPS_JAVASCRIPT_API_KEY}`,
-        async: true
+        src: `https://maps.googleapis.com/maps/api/js?key=${process.env.MAPS_JAVASCRIPT_API_KEY}`
       }
     ]
   },
