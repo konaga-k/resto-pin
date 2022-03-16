@@ -7,5 +7,17 @@ export default defineNuxtConfig({
   ],
   css: [
     'bulma'
-  ]
+  ],
+  meta: {
+    script: [
+      {
+        src: `https://maps.googleapis.com/maps/api/js?key=${process.env.MAPS_JAVASCRIPT_API_KEY}`
+      }
+    ]
+  },
+  privateRuntimeConfig: {
+    MAPS_EMBED_API: '',
+    GEOCODING_API_KEY: '',
+    PLACES_API_KEY: ''
+  }
 })
