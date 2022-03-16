@@ -1,3 +1,5 @@
 <template>
-  <li>結果</li>
+  <div>
+    <span>結果</span>
+  </div>
 </template>

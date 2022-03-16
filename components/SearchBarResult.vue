@@ -5,10 +5,10 @@ import SearchBarResultItem from './SearchBarResultItem.vue'
 <template>
   <div>
     <h2>検索結果</h2>
-    <ul>
+    <div>
       <SearchBarResultItem />
       <SearchBarResultItem />
       <SearchBarResultItem />
-    </ul>
+    </div>
   </div>
 </template>
